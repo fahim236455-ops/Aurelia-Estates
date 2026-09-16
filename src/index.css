@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f0f0f;
+  --color-secondary: #f5f4f0;
+  --color-accent: #bda689;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-secondary text-primary font-body antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-normal tracking-tight;
+  }
+}
+
+/* Custom cursor hides default pointer on desktop */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, input, textarea, select {
+    cursor: none;
+  }
+}
+
+/* Disable scrollbar for cleaner look if preferred, or leave as default */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f5f0; 
+}
+::-webkit-scrollbar-thumb {
+  background: #d2c6b4; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a99d8a; 
+}

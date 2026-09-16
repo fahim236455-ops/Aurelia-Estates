@@ -1,0 +1,6 @@
+{
+  "name": "Aurelia Estates",
+  "description": "Aurelia Estates is a fictional premium real estate website concept created by Fahim Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
